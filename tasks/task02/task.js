@@ -13,6 +13,14 @@
 function sumArray(arr) {
   
   // Ваш код здесь
+
+  let result = 0
+
+  for (const num of arr) {
+    result += num
+  }
+  return result
 }
 
+console.log(sumArray([1, 2, 3, 4, 5]))
 module.exports = { sumArray };

@@ -13,6 +13,19 @@
 function rowSums(matrix) {
   
   // Ваш код здесь
-}
 
+  let result = []
+
+  for (const arr of matrix) {
+    let elSum = 0
+
+    for (const el of arr) {
+      elSum += el
+    }
+
+    result.push(elSum)
+  }
+  return result
+}
+console.log(rowSums([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
 module.exports = { rowSums };

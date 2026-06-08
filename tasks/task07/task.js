@@ -15,6 +15,19 @@
 function flattenOnce(arr) {
   
   // Ваш код здесь
-}
 
+  let result = []
+
+  for (const el of arr) {
+    if (typeof el !== 'object') {
+      result.push(el)
+    } else if (typeof el === 'object') {
+      for (const element of el) {
+        result.push(element)
+      }
+    }
+  }
+  return result
+}
+console.log(flattenOnce([1, [2, 3], [4, 5], 6]))
 module.exports = { flattenOnce };

@@ -13,6 +13,15 @@
 function findMax(arr) {
   
   // Ваш код здесь
-}
 
+  let result = 0
+
+  for (const num of arr) {
+    if (num > result) {
+      result = num
+    }
+  }
+  return result
+}
+console.log(findMax([3,1,7,2,5]))
 module.exports = { findMax };

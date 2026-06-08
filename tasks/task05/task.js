@@ -14,6 +14,14 @@
 function reverseString(str) {
   
   // Ваш код здесь
+
+  let result = ''
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    result += str[i]
+  }
+  return result
 }
 
+console.log(reverseString('JavaScript'))
 module.exports = { reverseString };

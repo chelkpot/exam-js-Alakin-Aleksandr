@@ -12,6 +12,16 @@
 function filterEven(arr) {
   
   // Ваш код здесь
+
+  let result = []
+
+  for (const el of arr) {
+    if (el % 2 === 0) {
+      result.push(el)
+    }
+  }
+  return result
 }
 
-module.exports = { filterEven };
+console.log(filterEven([1, 2, 3, 4, 5, 6]))
+ module.exports = { filterEven };
